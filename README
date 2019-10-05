@@ -1,2 +1,10 @@
 05/10/2019
 Los archivos node_modules no se pueden cargar a git, primero localmente ejecutar comando npm i
+
+Freddy hizo esto
+<<<<<<< HEAD
+
+
+Jesus esta aqui
+=======
+>>>>>>> origin/master
