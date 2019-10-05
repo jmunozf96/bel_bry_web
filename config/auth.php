@@ -15,7 +15,7 @@ return [
 
     'defaults' => [
         'guard' => 'web',
-        'passwords' => 'users',
+        'passwords' => 'SEG_USUARIOS',
     ],
 
     /*
@@ -38,7 +38,7 @@ return [
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'SEG_USUARIOS',
         ],
 
         'api' => [
@@ -66,9 +66,13 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        /*'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],*/
+        'SEG_USUARIOS' => [
+            'driver' => 'eloquent',
+            'model' => App\SEG_USUARIOS::class,
         ],
 
         // 'users' => [
@@ -93,8 +97,13 @@ return [
     */
 
     'passwords' => [
-        'users' => [
+        /*'users' => [
             'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],*/
+        'SEG_USUARIOS' => [
+            'provider' => 'SEG_USUARIOS',
             'table' => 'password_resets',
             'expire' => 60,
         ],
