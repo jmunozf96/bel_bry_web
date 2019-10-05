@@ -7,4 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class SEG_USUARIOS extends Model
 {
     protected $table = 'SEG_USUARIOS';
+    protected $user = 'Prueba';
 }
