@@ -43,7 +43,7 @@ return [
 
         'api' => [
             'driver' => 'token',
-            'provider' => 'users',
+            'provider' => 'SEG_USUARIOS',
             'hash' => false,
         ],
     ],
@@ -66,10 +66,6 @@ return [
     */
 
     'providers' => [
-        /*'users' => [
-            'driver' => 'eloquent',
-            'model' => App\User::class,
-        ],*/
         'SEG_USUARIOS' => [
             'driver' => 'eloquent',
             'model' => App\SEG_USUARIOS::class,
@@ -97,11 +93,6 @@ return [
     */
 
     'passwords' => [
-        /*'users' => [
-            'provider' => 'users',
-            'table' => 'password_resets',
-            'expire' => 60,
-        ],*/
         'SEG_USUARIOS' => [
             'provider' => 'SEG_USUARIOS',
             'table' => 'password_resets',
